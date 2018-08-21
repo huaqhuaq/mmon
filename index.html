@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="keywords" content="GoldenHorse">
+    <meta name="description" content="GoldenHorse">
+    <meta name="author" content="">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- force webkit on 360 -->
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <!-- force edge on IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- force full screen on some browser -->
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+
+    <!-- force screen orientation on some browser -->
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-orientation" content="portrait">
+
+    <!--fix fireball/issues/3568 -->
+    <!--<meta name="browsermode" content="application">-->
+    <meta name="x5-page-mode" content="app">
+
+    <!--<link rel="apple-touch-icon" href=".png" />-->
+    <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+    <link rel="icon" href="img/icon_logo.png" type="image/x-ico">
+    <title>怪兽币官网</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="layer/layer.js"></script>
+</head>
+<body>
+	<!-- top -->
+	<div class="top">
+		<div class="topdown"></div>
+		<div class="container">
+			<div class="col-xs-2">
+				<a href="index.html" class="logo"><img src="img/icon_logo.png" alt="logo"></a>
+			</div>
+			<div class="col-xs-7">
+				<div class="topNav">
+					<ul class="row">
+						<li class="col-xs-3"><a href="index.html" class="topNav-item">官网首页<span class="text-uppercase">home</span></a></li>
+						<li class="col-xs-3 dropdown">
+							<a href="" class="topNav-item">新人专区<span class="text-uppercase">novice</span>
+							</a>
+							<ul class="topNav-menu">
+								<li><a href="index.html#huangjinma_novice" class="menu-item btn-huangjinma">黄金马</a></li>
+								<li><a href="index.html#wakuang_novice" class="menu-item btn-wakuang">怪兽矿机</a></li>
+							</ul>
+						</li>
+						<li class="col-xs-3 dropdown">
+							<a href="" class="topNav-item">进阶<span class="text-uppercase">advanced</span></a>
+							<ul class="topNav-menu">
+								<li><a href="index.html#huangjinma_advanced" class="menu-item btn-huangjinma">黄金马</a></li>
+								<li><a href="index.html#wakuang_advanced" class="menu-item btn-wakuang">怪兽矿机</a></li>
+							</ul>
+						</li>
+						<li class="col-xs-3"><a href="http://www.mmon.io/bbs/forum.php" target="_blank" class="topNav-item">论坛<span class="text-uppercase">forum</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<a href="recharge.html" class="btn-recharge"></a>
+			</div>
+		</div>
+		<nav class="topNav-mobile">
+            <ul>
+                <li><a href="index.html" title="">官网首页</a></li>
+                <li><a href="" title="">新人专区</a>
+                    <ul class="topNav-mobile-menu">
+                        <li><a href="index.html#huangjinma_novice">黄金马</a></li>
+                        <li><a href="index.html#wakuang_novice">怪兽矿机</a></li>
+                    </ul>
+                </li>
+                <li><a href="" title="">进阶</a>
+                    <ul class="topNav-mobile-menu">
+                        <li><a href="index.html#huangjinma_advanced">黄金马</a></li>
+                        <li><a href="index.html#wakuang_advanced">怪兽矿机</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://www.mmon.io/bbs/forum.php" target="_blank">论坛</a></li>
+            </ul>
+        </nav>
+	</div>
+	<main class="main">
+		<!-- banner -->
+		<img src="img/bg_home.png" class="banner">
+		<div class="game-tab container">
+			<div class="game-hd">
+				<ul>
+					<li class="huangjinma"></li>
+					<li class="wakuang"></li>
+				</ul>
+			</div>
+			<div class="game-bd">
+				<div class="areas areas_huangjinma">
+					<div class="column" id="huangjinma_novice">
+						<div class="column-header clearfix">
+							<div class="column-tit fl">
+								<img src="img/pic_novice.png" alt="novice">
+							</div>
+							<a href="http://www.g-horse.io/goldenhorse/game/faq.html" target="_blank" class="btn_novice fr"></a>
+						</div>
+						<div class="column-content clearfix">
+							<div class="hd clearfix">
+								<ul class="clearfix">
+									<li>视频分享</li>
+									<li>经验分享</li>
+									<li>图片一览</li>
+								</ul>
+								<span></span>
+							</div>
+							<div class="bd">
+								<ul class="video_list row">
+								</ul>
+								<ul class="experience_list">
+								</ul>
+								<ul class="pic_list row" id="pic_list1">
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="column" id="huangjinma_advanced">
+						<div class="column-header clearfix">
+							<div class="column-tit fl">
+								<img src="img/pic_advanced.png" alt="advanced">
+							</div>
+						</div>
+						<div class="column-content clearfix">
+							<div class="hd clearfix">
+								<ul class="clearfix">
+									<li>视频分享</li>
+									<li>经验分享</li>
+									<li>图片一览</li>
+								</ul>
+								<span></span>
+							</div>
+							<div class="bd">
+								<ul class="video_list row">
+								</ul>
+								<ul class="experience_list">
+								</ul>
+								<ul class="pic_list row" id="pic_list2">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="areas areas_wakuang">
+					<div class="column" id="wakuang_novice">
+						<div class="column-header clearfix">
+							<div class="column-tit fl">
+								<img src="img/pic_novice.png" alt="novice">
+							</div>
+						</div>
+						<div class="column-content clearfix">
+							<div class="hd clearfix">
+								<ul class="clearfix">
+									<li>视频分享</li>
+									<li>经验分享</li>
+									<li>图片一览</li>
+								</ul>
+								<span></span>
+							</div>
+							<div class="bd">
+								<ul class="video_list row">
+								</ul>
+								<ul class="experience_list">
+								</ul>
+								<ul class="pic_list row" id="pic_list3">
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="column" id="wakuang_advanced">
+						<div class="column-header clearfix">
+							<div class="column-tit fl">
+								<img src="img/pic_advanced.png" alt="advanced">
+							</div>
+						</div>
+						<div class="column-content clearfix">
+							<div class="hd clearfix">
+								<ul class="clearfix">
+									<li>视频分享</li>
+									<li>经验分享</li>
+									<li>图片一览</li>
+								</ul>
+								<span></span>
+							</div>
+							<div class="bd">
+								<ul class="video_list row">
+								</ul>
+								<ul class="experience_list">
+								</ul>
+								<ul class="pic_list row" id="pic_list4">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="back-top"><img src="img/top.png" alt="back-top"></div>
+	<script src="js/common.js"></script>
+	<script>
+		$('.game-hd ul li').eq(0).addClass('on').siblings().removeClass('on')
+		$('.areas').eq(0).show().siblings().hide()
+		$('.game-hd ul li').each(function(i) {
+			$(this).on('click', function() {
+				$(this).siblings().removeClass('on')
+				$(this).addClass('on')
+				$('.areas').eq(i).siblings().hide()
+				$('.areas').eq(i).show()
+			})
+		})
+		$('.btn-huangjinma').each(function() {
+			$(this).on('click', function() {
+				$('.game-hd .huangjinma').addClass('on')
+				$('.game-hd .wakuang').removeClass('on')
+				$('.game-bd .areas_huangjinma').show()
+				$('.game-bd .areas_wakuang').hide()
+			})
+		})
+		$('.btn-wakuang').each(function() {
+			$(this).on('click', function() {
+				$('.game-hd .wakuang').addClass('on')
+				$('.game-hd .huangjinma').removeClass('on')
+				$('.game-bd .areas_huangjinma').hide()
+				$('.game-bd .areas_wakuang').show()
+			})
+		})
+		$('.column-content').each(function() {
+			$(this).slide({
+				trigger:"click",
+				delayTime: 50,
+				endFun: function() {
+					$('.column-content .hd').each(function(i) {
+						if($(this).find('li').eq(0).hasClass('on')){
+							$(this).find('span').css('left', '0%')
+						}else if($(this).find('li').eq(1).hasClass('on')){
+							$(this).find('span').css('left', '33.33%')
+						}else if($(this).find('li').eq(2).hasClass('on')){
+							$(this).find('span').css('left', '66.67%')
+						}
+					})
+				}
+			})
+		})
+	    $('a[href*=#],area[href*=#]').click(function() {
+	        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+	            var $target = $(this.hash)
+	            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']')
+	            if ($target.length) {
+	                var targetOffset = $target.offset().top - 120
+	                $('html,body').animate({
+	                            scrollTop: targetOffset
+	                        },
+	                        1000)
+	                return false
+	            }
+	        }
+	    })
+
+
+		$.getJSON('res_config.json', function (data) {
+			for (var i =0; i <data.mmon.level0.video.length; i++) {
+				var img = data.mmon.level0.video[i].img
+				var url = data.mmon.level0.video[i].url
+				if (/^res.video/.test(url)) {
+					url = "video.html?index="+i
+				}
+				var title = data.mmon.level0.video[i].title
+				$("#huangjinma_novice").find('.video_list').append(
+					'<li class="col-sm-3 col-xs-6">' +
+					'<a href=' + url +' target="_blank">' +
+					'<img src='+ img + '>' +
+					'<span class="video-tit" title=' + title + '>' + title +
+					'</span>' +
+					'<div class="mask pa"><span class="mask-play-ico"></span></div>' +
+					'</a>' +
+					'</li>'
+				);
+			}
+			for (var i =0; i <data.mmon.level0.article.length; i++) {
+				var title = data.mmon.level0.article[i].title
+				var time = data.mmon.level0.article[i].time
+				var url = data.mmon.level0.article[i].url
+				$("#huangjinma_novice").find('.experience_list').append(
+					'<li><a href=' + url + ' title=' + title + ' target="_blank" class="clearfix">' + title + '<span>' + time + '</span></a></li>'
+				);
+			}
+			for (var i =0; i <data.mmon.level0.img.length; i++) {
+				var img = data.mmon.level0.img[i]
+				$("#huangjinma_novice").find('.pic_list').append(
+					'<li class="col-sm-3 col-xs-6">' +
+					'<img src=' + img + '>' +
+					'</li>'
+				);
+				layer.photos({
+				  photos: '#pic_list1',
+				  anim: 5,
+				  shade: 0.7,
+				  resize: false,
+				  move: false
+				})
+			}
+			for (var i =0; i <data.mmon.level1.video.length; i++) {
+				var img = data.mmon.level1.video[i].img
+				var url = data.mmon.level1.video[i].url
+				var title = data.mmon.level1.video[i].title
+				if (/^res.video/.test(url)) {
+					url = "video.html?index="+i
+				}
+				$("#huangjinma_advanced").find('.video_list').append(
+					'<li class="col-sm-3 col-xs-6">' +
+					'<a href=' + url +' target="_blank">' +
+					'<img src='+ img + '>' +
+					'<span class="video-tit" title=' + title + '>' + title +
+					'</span>' +
+					'<div class="mask pa"><span class="mask-play-ico"></span></div>' +
+					'</a>' +
+					'</li>'
+				);
+			}
+			for (var i =0; i <data.mmon.level1.article.length; i++) {
+				var title = data.mmon.level1.article[i].title
+				var time = data.mmon.level1.article[i].time
+				var url = data.mmon.level1.article[i].url
+				$("#huangjinma_advanced").find('.experience_list').append(
+					'<li><a href=' + url + ' title=' + title + ' target="_blank" class="clearfix">' + title + '<span>' + time + '</span></a></li>'
+				);
+			}
+			for (var i =0; i <data.mmon.level1.img.length; i++) {
+				var img = data.mmon.level1.img[i]
+				$("#huangjinma_advanced").find('.pic_list').append(
+					'<li class="col-sm-3 col-xs-6">' +
+					'<img src=' + img + '>' +
+					'</li>'
+				);
+				layer.photos({
+				  photos: '#pic_list2',
+				  anim: 5,
+				  shade: 0.7,
+				  resize: false,
+				  move: false
+				})
+			}
+			for (var i =0; i <data.kj.level0.video.length; i++) {
+				var img = data.kj.level0.video[i].img
+				var url = data.kj.level0.video[i].url
+				var title = data.kj.level0.video[i].title
+				if (/^res.video/.test(url)) {
+					url = "video.html?index="+i
+				}
+				$("#wakuang_novice").find('.video_list').append(
+					'<li class="col-sm-3 col-xs-6">' +
+					'<a href=' + url +' target="_blank">' +
+					'<img src='+ img + '>' +
+					'<span class="video-tit" title=' + title + '>' + title +
+					'</span>' +
+					'<div class="mask pa"><span class="mask-play-ico"></span></div>' +
+					'</a>' +
+					'</li>'
+				);
+			}
+			for (var i =0; i <data.kj.level0.article.length; i++) {
+				var title = data.kj.level0.article[i].title
+				var time = data.kj.level0.article[i].time
+				var url = data.kj.level0.article[i].url
+				$("#wakuang_novice").find('.experience_list').append(
+					'<li><a href=' + url + ' title=' + title + ' target="_blank" class="clearfix">' + title + '<span>' + time + '</span></a></li>'
+				);
+			}
+			for (var i =0; i <data.kj.level0.img.length; i++) {
+				var img = data.kj.level0.img[i]
+				$("#wakuang_novice").find('.pic_list').append(
+					'<li class="col-sm-3 col-xs-6">' +
+					'<img src=' + img + '>' +
+					'</li>'
+				);
+				layer.photos({
+				  photos: '#pic_list3',
+				  anim: 5,
+				  shade: 0.7,
+				  resize: false,
+				  move: false
+				})
+			}
+			for (var i =0; i <data.kj.level1.video.length; i++) {
+				var img = data.kj.level1.video[i].img
+				var url = data.kj.level1.video[i].url
+				var title = data.kj.level1.video[i].title
+				if (/^res.video/.test(url)) {
+					url = "video.html?index="+i
+				}
+				$("#wakuang_advanced").find('.video_list').append(
+					'<li class="col-sm-3 col-xs-6">' +
+					'<a href=' + url +' target="_blank">' +
+					'<img src='+ img + '>' +
+					'<span class="video-tit" title=' + title + '>' + title +
+					'</span>' +
+					'<div class="mask pa"><span class="mask-play-ico"></span></div>' +
+					'</a>' +
+					'</li>'
+				);
+			}
+			for (var i =0; i <data.kj.level1.article.length; i++) {
+				var title = data.kj.level1.article[i].title
+				var time = data.kj.level1.article[i].time
+				var url = data.kj.level1.article[i].url
+				$("#wakuang_advanced").find('.experience_list').append(
+					'<li><a href=' + url + ' title=' + title + ' target="_blank" class="clearfix">' + title + '<span>' + time + '</span></a></li>'
+				);
+			}
+			for (var i =0; i <data.kj.level1.img.length; i++) {
+				var img = data.kj.level1.img[i]
+				$("#wakuang_advanced").find('.pic_list').append(
+					'<li class="col-sm-3 col-xs-6">' +
+					'<img src=' + img + '>' +
+					'</li>'
+				);
+				layer.photos({
+				  photos: '#pic_list4',
+				  anim: 5,
+				  shade: 0.7,
+				  resize: false,
+				  move: false
+				})
+			}
+		})
+	</script>
+</body>
+</html>

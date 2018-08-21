@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="keywords" content="GoldenHorse">
+    <meta name="description" content="GoldenHorse">
+    <meta name="author" content="">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- force webkit on 360 -->
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <!-- force edge on IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- force full screen on some browser -->
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+
+    <!-- force screen orientation on some browser -->
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-orientation" content="portrait">
+
+    <!--fix fireball/issues/3568 -->
+    <!--<meta name="browsermode" content="application">-->
+    <meta name="x5-page-mode" content="app">
+
+    <!--<link rel="apple-touch-icon" href=".png" />-->
+    <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+    <link rel="icon" href="img/icon_logo.png" type="image/x-ico">
+    <title>充值</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="layer/layer.js"></script>
+    <script src="js/clipboard.js"></script>
+</head>
+<body>
+    <!-- top -->
+    <div class="top">
+        <div class="topdown"></div>
+        <div class="container">
+            <div class="col-xs-2">
+                <a href="index.html" class="logo"><img src="img/icon_logo.png" alt="logo"></a>
+            </div>
+            <div class="col-xs-7">
+                <div class="topNav">
+                    <ul class="row">
+                        <li class="col-xs-3"><a href="index.html" class="topNav-item">官网首页<span class="text-uppercase">home</span></a></li>
+                        <li class="col-xs-3 dropdown">
+                            <a href="" class="topNav-item">新人专区<span class="text-uppercase">novice</span>
+                            </a>
+                            <ul class="topNav-menu">
+                                <li><a href="index.html#huangjinma_novice" class="menu-item btn-huangjinma">黄金马</a></li>
+                                <li><a href="index.html#wakuang_novice" class="menu-item btn-wakuang">怪兽矿机</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-3 dropdown">
+                            <a href="" class="topNav-item">进阶<span class="text-uppercase">advanced</span></a>
+                            <ul class="topNav-menu">
+                                <li><a href="index.html#huangjinma_advanced" class="menu-item btn-huangjinma">黄金马</a></li>
+                                <li><a href="index.html#wakuang_advanced" class="menu-item btn-wakuang">怪兽矿机</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-xs-3"><a href="http://www.mmon.io/bbs/forum.php" target="_blank" class="topNav-item">论坛<span class="text-uppercase">forum</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <a href="recharge.html" class="btn-recharge"></a>
+            </div>
+        </div>
+        <nav class="topNav-mobile">
+            <ul>
+                <li><a href="index.html" title="">官网首页</a></li>
+                <li><a href="" title="">新人专区</a>
+                    <ul class="topNav-mobile-menu">
+                        <li><a href="index.html#huangjinma_novice">黄金马</a></li>
+                        <li><a href="index.html#wakuang_novice">怪兽矿机</a></li>
+                    </ul>
+                </li>
+                <li><a href="" title="">进阶</a>
+                    <ul class="topNav-mobile-menu">
+                        <li><a href="index.html#huangjinma_advanced">黄金马</a></li>
+                        <li><a href="index.html#wakuang_advanced">怪兽矿机</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://www.mmon.io/bbs/forum.php" target="_blank">论坛</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="main">
+        <div class="recharge_bg">
+            <div class="container">
+                <div class="recharge_wrap">
+                    <div class="row qianbao_wrap">
+                        <div class="col-sm-6 col-xs-12">
+                            <img class="pic_qianbao" src="img/pic_qianbao.jpg" alt="pic_qianbao">
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <h4 class="text-primary">请使用以下钱包兑换<br>否则丢失代币后果自负</h4>
+                            <img class="icon_qianbao" src="img/icon_qianbao.png" alt="icon_qianbao">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4 class="text-primary">钱包地址： <span id="address">ox281233570222s6a0ada0560ox2</span></h4>
+                            <button class="btn btn_fuzhi" data-clipboard-action="copy" data-clipboard-target="#address"></button>
+                            <p class="text-note">
+                                按照当前热币网ETH与MMON汇率<br>
+                                当前ETH与MMON汇率为 1:<span id="rate">200000</span>
+                            </p>
+                            <h4 class="text-danger">提示：提交付款成功后，将截图发送给微信联系人</h4>
+                            <div class="kefu_wrap">
+                                <div class="text-center">
+                                    <img class="pic_kefu" src="img/pic_erweima_1.png" alt="微信客服1">
+                                    <img class="pic_kefu" src="img/pic_erweima_2.png" alt="微信客服2">
+                                    <img class="pic_kefu" src="img/pic_erweima_3.png" alt="微信客服3">
+                                    <a target="_blank" rel="nofollow" class="pic_kefu" href="http://wpa.qq.com/msgrd?v=3&uin=3191233585&site=qq&menu=yes"><img class="pic_kefu" src="img/pic_erweima_4.png" alt="QQ客服"></a>
+                                </div>
+                                <h4 class="text-primary">有问题？<br>扫一扫上面的二维码图案添加<br>MMON微信客服，或联系QQ客服</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="back-top"><img src="img/top.png" alt="back-top"></div>
+    <script src="js/common.js"></script>
+    <script>
+        var clipboard = new ClipboardJS('.btn_fuzhi')
+        clipboard.on('success', function(e) {
+            console.log(e)
+            layer.msg('复制成功')
+        })
+        clipboard.on('error', function(e) {
+            console.log(e)
+            layer.msg('复制失败')
+        })
+
+        $.ajax({
+            url: 'hotcoin.php',
+            dataType: 'JSON',
+            type: 'GET',
+            crossDomain: true,
+            success: function (data) {
+                console.log(data)
+                data = data.data
+                $('#rate').text(Math.round(1/data.close))
+            },
+            error: function (error) {
+                console.log(error)
+            }
+        })
+    </script>
+</body>
+</html>

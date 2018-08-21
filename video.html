@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/video-js.css" rel="stylesheet">
+    <style type="text/css">
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .video {
+        display: flex;
+    }
+
+    .video-js .vjs-subtitles {
+        font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", helvetica, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        color: #fc6;
+        font-size: 2em;
+        line-height: 1em;
+    }
+
+    .video-js,
+    .vjs-default-skin .vjs-big-play-button {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="video">
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+    var k1 = "mmon"
+    var k2 = "level0"
+    if (parseInt(GetQueryString('game')) == 1) {
+        k1 = "kj"
+    }
+    if (parseInt(GetQueryString('level')) == 1) {
+        k2 = "level1"
+    }
+    $.getJSON('./res_config.json', function(data) {
+        var value = data[k1][k2].video[parseInt(GetQueryString('index'))]
+        $('body').append('<title>' + value.title +'</title>')
+        $('.video').append(
+            '<video class="video-js vjs-default-skin" controls preload="auto" width="1280" height="700" poster="' + value.img +'" data-setup="{}">' +
+            '<source src ="' + value.url + '" type = "video/mp4" / >' +
+            '</video>'
+        )
+    })
+
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+    </script>
+</body>
+
+</html>
